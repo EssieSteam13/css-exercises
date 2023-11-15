@@ -6,6 +6,8 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
@@ -28,10 +30,32 @@ input {
 }
 
 .footer {
+  display: flex;
   flex-direction: column;
+  align-self:flex-end;
+}
 }
 
 .content {
   margin: 50px;
   align-items: center;
+
+  
+}
+
+.header { 
+  display: flex;
+  flex-direction: column;
+}
+
+.left-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.right-links {
+  display: flex ;
+  align-items:  flex-end;
+  justify-content: space-evenly;
 }
