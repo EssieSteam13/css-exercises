@@ -10,6 +10,16 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 900px;
+  font-size: 32px;
+  padding: 0 16px;
+}
+
+.body {
+  flex: 1;
+  display: flex;
 }
 
 .footer {
@@ -17,33 +27,56 @@ body {
   background: #eee;
   color: darkmagenta;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  
+  align-items: center;
+}
+
+.sidebar-card {
+display: flex;
+flex: 1;
+
+
 }
 
 .sidebar {
-  width: 300px;
+  padding: 16px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  width: 300px;
+  
+}
+
+
+.container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 32px;
+  
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  flex-wrap: wrap;
-  
-  width: 150px;
+  width: 300px; 
+  margin: 16px;
   padding: 16px;
-  margin: 20px;
 
 }
 
-.sidebar-card {
-  display: flex;
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
 }
